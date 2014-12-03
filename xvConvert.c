@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <math.h>
-#include <malloc.h>
-
+#include <stdlib.h>
+#include <string.h>
 
 // reference: http://www.cnblogs.com/lsjwq/archive/2011/05/15/2046716.html
 
 int XV_Convert(char* src_file) {
     char *fb, peek[5];
-    int mn, type, l, rl, c, fail;
+    int mn = 0, type = 0, l = 0, rl = 0, c = 0, fail = 0;
     char *ts=NULL;
     char *video_type[7] = {"rmvb", "wmv", "flv", "avi", "mp4", "mpg", "mkv"};
     char val[7]={46, 48, 70, 82, 0, 0, 26};
